@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.graphics.Color;
 
 import androidx.fragment.app.Fragment;
-
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.ImageView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,10 +61,28 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
+        // Create the LinearLayout
+        LinearLayout layout = new LinearLayout(getActivity());
+        layout.setOrientation(LinearLayout.VERTICAL); // Set the orientation to vertical
 
+        // Create a TextView
+        TextView dayTextView = new TextView(getActivity());
+        dayTextView.setText("Thursday"); // Set the day
+        dayTextView.setTextSize(24); // Optional: Set text size
 
-        view.setBackgroundColor(Color.parseColor("#20FF0000"));
-        return inflater.inflate(R.layout.fragment_forecast, container, false);
+        // Create an ImageView
+        ImageView weatherIcon = new ImageView(getActivity());
+//        weatherIcon.setImageResource(R.drawable.weather_icon); // Replace with your icon name
+
+        // Add the TextView and ImageView to the LinearLayout
+        layout.addView(dayTextView);
+        layout.addView(weatherIcon);
+
+        // Set the layout parameters
+        layout.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+
+    return layout;
     }
 }
