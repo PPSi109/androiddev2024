@@ -83,6 +83,8 @@ public class ForecastFragment extends Fragment {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
-    return layout;
+
+
+        return layout;
     }
 }
