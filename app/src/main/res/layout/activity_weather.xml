@@ -4,18 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Weather Fragment -->
-    <fragment
-        android:id="@+id/fragment_weather"
-        android:name="vn.edu.usth.usthweather.WeatherFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- Forecast Fragment -->
-    <fragment
-        android:id="@+id/fragment_forecast"
-        android:name="vn.edu.usth.usthweather.ForecastFragment"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 </LinearLayout>

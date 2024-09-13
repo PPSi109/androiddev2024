@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeatherAndForecastFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/weather_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather Information"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue_light"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/forecast_day_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="MON - Sunny - 26C - 33C"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/forecast_day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUE - Partly Cloudy - 24C - 31C"
+            android:textColor="@color/black"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/forecast_day_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WED - Sunny - 25C - 30C"
+            android:textColor="@color/black"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/forecast_day_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THU - Rain - 22C - 25C"
+            android:textColor="@color/black"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/forecast_day_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRI - Thunderstorms - 25C - 28C"
+            android:textColor="@color/black"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/forecast_day_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAT - Sunny - 27C - 33C"
+            android:textColor="@color/black"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/forecast_day_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUN - Sunny - 29C - 35C"
+            android:textColor="@color/black"
+            android:padding="20dp" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
