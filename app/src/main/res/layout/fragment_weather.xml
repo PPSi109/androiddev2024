@@ -14,5 +14,11 @@
         android:textSize="18sp"
         android:textColor="@android:color/white"
         android:layout_centerInParent="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_9patch" >
+        <!-- Nội dung của giao diện thời tiết -->
+    </LinearLayout>
 
 </FrameLayout>
